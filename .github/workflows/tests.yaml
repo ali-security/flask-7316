@@ -27,7 +27,7 @@ jobs:
           - {name: Linux, python: '3.11', os: ubuntu-22.04, tox: py311}
           - {name: Windows, python: '3.11', os: windows-2022, tox: py311}
           - {name: Mac, python: '3.11', os: macos-12, tox: py311}
-          - {name: '3.12-dev', python: '3.12-dev', os: ubuntu-22.04, tox: py312}
+          - {name: '3.12', python: '3.12', os: ubuntu-22.04, tox: py312}
           - {name: '3.10', python: '3.10', os: ubuntu-22.04, tox: py310}
           - {name: '3.9', python: '3.9', os: ubuntu-22.04, tox: py39}
           - {name: '3.8', python: '3.8', os: ubuntu-22.04, tox: py38}

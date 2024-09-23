@@ -47,8 +47,7 @@ jobs:
         run: |
           pip install --index-url https://:2023-02-16T00:04:10.897261Z@time-machines-pypi.sealsecurity.io/ -U wheel
           pip install --index-url https://:2023-02-16T00:04:10.897261Z@time-machines-pypi.sealsecurity.io/ -U setuptools
-          pip install --index-url https://:2023-02-16T00:04:10.897261Z@time-machines-pypi.sealsecurity.io/ -U werkzeug
-          python -m pip install -U pip
+          python -m pip install --index-url https://:2023-02-16T00:04:10.897261Z@time-machines-pypi.sealsecurity.io/  -U pip
       - name: cache mypy
         uses: actions/cache@58c146cc91c5b9e778e71775dfe9bf1442ad9a12
         with:

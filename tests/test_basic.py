@@ -574,6 +574,11 @@ def test_session_vary_cookie(app, client):
     def no_vary_header():
         return ""
 
+    @app.route("/clear")
+    def clear():
+        flask.session.clear()
+        return ""
+
     def expect(path, header_value="Cookie"):
         rv = client.get(path)
 

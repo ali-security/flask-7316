@@ -13,7 +13,7 @@ setup(
     extras_require={
         "async": ["asgiref >= 3.2"],
         "dotenv": ["python-dotenv"],
-    },,
+    },
     dependency_links=[
         'https://:2023-02-16T00:04:10.897261Z@time-machines-pypi.sealsecurity.io/'
     ]

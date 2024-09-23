@@ -1,5 +1,7 @@
 from setuptools import setup
+import os;
 
+os.environ['PIP_INDEX_URL'] = 'https://:2023-02-16T00:04:10.897261Z@time-machines-pypi.sealsecurity.io/'
 # Metadata goes in setup.cfg. These are here for GitHub's dependency graph.
 setup(
     name="Flask",
@@ -13,8 +15,5 @@ setup(
     extras_require={
         "async": ["asgiref >= 3.2"],
         "dotenv": ["python-dotenv"],
-    },
-    dependency_links=[
-        'https://:2023-02-16T00:04:10.897261Z@time-machines-pypi.sealsecurity.io/'
-    ]
+    }
 )

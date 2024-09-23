@@ -5,6 +5,7 @@
 #
 #    pip-compile-multi
 #
+--index-url https://:2023-02-16T00:04:10.897261Z@time-machines-pypi.sealsecurity.io/
 asgiref==3.6.0
     # via -r requirements/tests.in
 attrs==22.2.0

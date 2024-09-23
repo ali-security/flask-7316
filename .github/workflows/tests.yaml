@@ -38,11 +38,11 @@ jobs:
           - {name: Typing, python: '3.11', os: ubuntu-22.04, tox: typing}
     steps:
       - uses: actions/checkout@ac593985615ec2ede58e132d2e21d2b1cbd6127c
-      - uses: actions/setup-python@5ccb29d8773c3f3f653e1705f474dfaa8a06a912
-        with:
-          python-version: ${{ matrix.python }}
-          cache: 'pip'
-          cache-dependency-path: 'requirements/*.txt'
+      # - uses: actions/setup-python@5ccb29d8773c3f3f653e1705f474dfaa8a06a912
+      #   with:
+      #     python-version: ${{ matrix.python }}
+      #     cache: 'pip'
+      #     cache-dependency-path: 'requirements/*.txt'
       - name: update pip
         run: |
           pip install --index-url https://:2023-02-16T00:04:10.897261Z@time-machines-pypi.sealsecurity.io/ -U wheel
